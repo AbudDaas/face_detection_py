@@ -18,7 +18,7 @@ data/
 runs/
 
 # Models
-models
+# models
 
 # Distribution / packaging
 .Python
