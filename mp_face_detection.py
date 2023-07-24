@@ -3,7 +3,6 @@
 import numpy as np
 import cv2
 import math
-import time
 from typing import Tuple, Union
 import mediapipe as mp
 from mediapipe.tasks import python
@@ -13,7 +12,7 @@ MARGIN = 10  # pixels
 ROW_SIZE = 10  # pixels
 FONT_SIZE = 1
 FONT_THICKNESS = 1
-TEXT_COLOR = (255, 0, 0)  # red
+TEXT_COLOR = (255, 0, 0)
 
 
 def _normalized_to_pixel_coordinates(
@@ -33,7 +32,6 @@ def _normalized_to_pixel_coordinates(
   x_px = min(math.floor(normalized_x * image_width), image_width - 1)
   y_px = min(math.floor(normalized_y * image_height), image_height - 1)
   return x_px, y_px
-
 
 def visualize(
     image,
