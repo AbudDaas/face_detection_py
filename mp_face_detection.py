@@ -14,7 +14,6 @@ FONT_SIZE = 1
 FONT_THICKNESS = 1
 TEXT_COLOR = (255, 0, 0)
 
-
 # Checks if the float value is between 0 and 1.
 def is_valid_normalized_value(value: float) -> bool:
       return (value > 0 or math.isclose(0, value)) and (value < 1 or math.isclose(1, value))
