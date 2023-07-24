@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+
 import cv2
 
 face_cascade = cv2.CascadeClassifier('haar/haarcascade_frontalface_default.xml')
