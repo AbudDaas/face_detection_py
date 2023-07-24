@@ -7,8 +7,8 @@ face_cascade = cv2.CascadeClassifier('haar/haarcascade_frontalface_default.xml')
 def detect(gray ,image):
     faces =face_cascade.detectMultiScale(gray,scaleFactor=1.1,minNeighbors=3,minSize=(3, 3))
     # print(faces)
-    for (x,y ,w ,h) in faces:
-        cv2.rectangle(image , (x,y), (x+w ,y+h) , (255,0,0) ,2 ) 
+    for(x,y ,w ,h) in faces:
+        cv2.rectangle(image,(x,y),(x+w ,y+h),(255,0,0),2) 
     return image
 
 def detect_face(img_path):
